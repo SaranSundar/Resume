@@ -1,0 +1,164 @@
+%-------------------------
+% Resume in Latex
+% Author : Saran Sundararajan
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://saransundar.com/}{\Large Saran Sundararajan}} & Website: \href{https://saransundar.com/}{saransundar.com}\\
+  \href{mailto:saran@nilal.com}{saran@nilal.com}& \href{https://github.com/SaranSundar}{github.com/SaranSundar}\\
+  \href{https://www.linkedin.com/in/saran-sundararajan/}{linkedin.com/in/saran-sundararajan} & Mobile: +1-214-218-8976\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Texas at Dallas}{Richardson, TX}
+      {Master of Science in Software Engineering; 3.668 Major GPA/3.348 Overall GPA}{September 2019 -- May 2021}
+    \resumeSubheading
+      {University of Texas at Dallas}{Richardson, TX}
+      {Bachelor of Science in Software Engineering; 3.668 Major GPA/3.348 Overall GPA}{September 2016 -- May 2020}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Languages, Frameworks \& About Me}
+ \resumeSubHeadingListStart
+    \resumeSubItem{Expert}
+    {Java, Python, JavaScript/ReactJS, Android/Kotlin, HTML 5/CSS 3, Flutter}
+    \resumeSubItem{Proficient}
+    {NodeJS, C\#, iOS/Swift, Arduino, C++}
+    \resumeSubItem{Multiple Hackathon Award Winner}
+    {Both Hardware and Software}
+    \resumeSubItem{Code Advocate}
+    {Passion for teaching code to kids and for learning new frameworks and technologies.}
+ \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Cisco}{Richardson, TX}
+      {Software Engineer (Intern)}{May 2019 - August 2019}
+      \resumeItemListStart
+        \resumeItem{NSO Automation}
+          {Created a suite of python scripts to automate NSO (Network Services Orchestrator) setup and device run-time folder creation, reducing a 5-8 hour installation process down to 5-10 minutes.}
+        \resumeItem{OS Upgrade (NSO)}
+          {Developed a smart analytics enhancement to provide expected success/failure rate for upgrading a device. Pinpointed cause of error failure across thousands of devices by analyzing patterns between the devices and platforms and provided an escalation option with possible resolution.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Netnology.io}{Richardson, TX}
+      {Software Engineer (Intern) Co-op}{August 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{Time Management Platform}
+          {Created a time management payroll platform for internal use to store partners, customers, projects, tasks, and deliverables. Allows employees to log hours to tasks, and allows managers to view a dashboard containing project summaries and expense reports with analytics to see where resources were being used. Cut down licensing costs for the year by 20\%}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {T-Mobile}{Richardson, TX}
+      {Product Manager (Intern)}{July 2018 - November 2018}
+      \resumeItemListStart
+        \resumeItem{MetroPCS Catalog}
+          {https://metropcs.surge.sh/
+          \newline Performed Gap Analysis in collaboration with design team for new branding of the phone catalog page which was created with ReactJS. Managed user stories in Rally, and team communication in Confluence.}
+         \resumeItem{Graph Automation}
+          {Used Selenium and Python for graph data automation, raised call to action speed by 60\%}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Personal Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Flair}
+      {Python, JavaScript, ReactJS, Flask, WebSockets, HTML5/CSS3
+      \newline https://github.com/SaranSundar/Flair
+      \newline Created an open-source framework to build cross platform desktop apps. 90\% more efficient then ElectronJS and has full packaging solution out of the box for Windows and MacOS.}
+    \resumeSubItem{Firebase Chinese Novel Scraper}
+      {Python, Beautiful Soup, Panda, LXML, SMTP, Cron
+      \newline github.com/SaranSundar/FirebaseChineseNovelScraper
+      \newline Scraped several table entries from different sites; looked for the latest chapter entry, compared it to the database, and sent email if new chapters were found. Automated the process with a Cron job.}
+    \resumeSubItem{PritiGood}
+      {ReactJS, JavaScript, HTML5/CSS3, Surge.sh
+      \newline https://pritigood.surge.sh --- github.com/SaranSundar/PritiGoodV2
+      \newline Showcase for local bakery's beautiful and unique sweets. Created custom photo gallery algorithm for random shapes and sizes using CSS Grid.}
+    \resumeSubItem{Apprentice Chef}
+        {Android, Java, Google Vision API, OCR
+        \newline devpost.com/software/apprenticechef
+        \newline Cooking app utilizing computer vision for parsing screen shots of recipes into the ingredient measurements. It then converts them into a more useful unit for chefs such as 6TBSP instead of 0.375 CUPS. Can cut or scale the recipe based on limiting ingredients.}
+  \resumeSubHeadingListEnd
+
+\end{document}
